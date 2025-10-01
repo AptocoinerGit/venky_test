@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["silver_reservations","silver_properties","Measure"]
+
+ref table silver_reservations
+ref table silver_properties
+ref table Measure
+ref table DateTableTemplate_9e27926e-7f03-46a9-afc7-5f7284e42c18
+ref table LocalDateTable_5eeb3893-6934-4938-90de-97aa9c03d92b
+ref table Date
+ref table LocalDateTable_bb1a9687-946e-458d-9da6-d41c5f2be5be
+
+ref cultureInfo en-US
+

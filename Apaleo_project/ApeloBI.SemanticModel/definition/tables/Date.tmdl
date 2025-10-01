@@ -1,0 +1,31 @@
+table Date
+	lineageTag: e6838fae-9321-4b8e-b991-a4fe613c1160
+
+	column Date
+		formatString: General Date
+		lineageTag: c036abce-5d40-4813-b0ad-35a38c459460
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 6fa8a58e-3a20-4850-a474-69e5ca3a5ab1
+			defaultHierarchy: LocalDateTable_bb1a9687-946e-458d-9da6-d41c5f2be5be.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Date = calculated
+		mode: import
+		source = ```
+				
+				CALENDAR(
+				    MIN(silver_reservations[checkInTime]),
+				    MAX(silver_reservations[checkInTime])
+				)
+				
+				
+				```
+
+	annotation PBI_Id = b84b0e740df24aae9288e966ca315f2a
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "ApeloBI"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9bde4bf2-d738-8fd5-4cd4-259be60935de"
+  }
+}

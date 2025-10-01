@@ -1,0 +1,544 @@
+table silver_reservations
+	lineageTag: 042783d7-5e12-47e1-be21-9b46eb0a9515
+
+	column adults
+		dataType: int64
+		formatString: 0
+		lineageTag: 2bc559e2-40fb-4082-9e1a-24152e5d406b
+		summarizeBy: sum
+		sourceColumn: adults
+
+		annotation SummarizationSetBy = Automatic
+
+	column allFoliosHaveInvoice
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f86fed24-960c-446d-ac73-35853ee39af8
+		summarizeBy: none
+		sourceColumn: allFoliosHaveInvoice
+
+		annotation SummarizationSetBy = Automatic
+
+	column arrival
+		dataType: string
+		lineageTag: fa816d1f-5a11-4aa7-8150-9d7fccd35e3b
+		summarizeBy: none
+		sourceColumn: arrival
+
+		annotation SummarizationSetBy = Automatic
+
+	column bookingId
+		dataType: string
+		lineageTag: 6e13ed8c-5cc6-4a78-97aa-18363e8030f2
+		summarizeBy: none
+		sourceColumn: bookingId
+
+		annotation SummarizationSetBy = Automatic
+
+	column channelCode
+		dataType: string
+		lineageTag: 988000b9-8feb-497e-bdd7-eb808461df1b
+		summarizeBy: none
+		sourceColumn: channelCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column checkInTime
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5240ebe6-54cc-4bcd-a585-ede2ff48ef90
+		summarizeBy: none
+		sourceColumn: checkInTime
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column checkOutTime
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a04f1855-482a-4d28-a263-1ec8b1e3fd4a
+		summarizeBy: none
+		sourceColumn: checkOutTime
+
+		variation Variation
+			isDefault
+			relationship: 40b23437-aa1a-4886-8215-8cdb027190ae
+			defaultHierarchy: LocalDateTable_5eeb3893-6934-4938-90de-97aa9c03d92b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column created
+		dataType: string
+		lineageTag: 0bdb347c-eeef-459b-a9b2-c7bf737a5f0a
+		summarizeBy: none
+		sourceColumn: created
+
+		annotation SummarizationSetBy = Automatic
+
+	column departure
+		dataType: string
+		lineageTag: 19739945-5956-4479-8ed4-41752d0270ee
+		summarizeBy: none
+		sourceColumn: departure
+
+		annotation SummarizationSetBy = Automatic
+
+	column guaranteeType
+		dataType: string
+		lineageTag: b1da99e0-1dfd-48b4-8ca4-d25a8c68a9d4
+		summarizeBy: none
+		sourceColumn: guaranteeType
+
+		annotation SummarizationSetBy = Automatic
+
+	column hasCityTax
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 051c2772-9b8c-4cd1-8a27-89d2b25fa2f0
+		summarizeBy: none
+		sourceColumn: hasCityTax
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: string
+		lineageTag: ea618e1b-cc2c-41c7-8613-9e8fe2cc9713
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column isPreCheckedIn
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: de6783da-c818-4901-b696-ccea084d8718
+		summarizeBy: none
+		sourceColumn: isPreCheckedIn
+
+		annotation SummarizationSetBy = Automatic
+
+	column modified
+		dataType: string
+		lineageTag: 0081e68f-356e-4650-8377-6709a400f890
+		summarizeBy: none
+		sourceColumn: modified
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: dad34858-99d1-47b3-8e81-fa74b59bc74b
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column balance_currency
+		dataType: double
+		lineageTag: 421ab104-d588-4284-a9b3-9dcf60aa0b98
+		summarizeBy: sum
+		sourceColumn: balance_currency
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column balance_amount
+		dataType: double
+		lineageTag: ef587ad5-b3b5-46be-aebc-63fc8d6946e2
+		summarizeBy: sum
+		sourceColumn: balance_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cancellationFee_name
+		dataType: string
+		lineageTag: 3da3e67d-bf89-4a23-b975-c045d300ce35
+		summarizeBy: none
+		sourceColumn: cancellationFee_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column cancellationFee_code
+		dataType: string
+		lineageTag: 0789454e-5baa-49fb-a584-3c57d3ecd1a7
+		summarizeBy: none
+		sourceColumn: cancellationFee_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column cancellationFee_description
+		dataType: string
+		lineageTag: 74ca2cb5-8c6c-4ac1-b570-49cdb4d29802
+		summarizeBy: none
+		sourceColumn: cancellationFee_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column cancellationFee_fee
+		dataType: string
+		lineageTag: 4a101697-785c-41fd-a6df-9a5dd08458ac
+		summarizeBy: none
+		sourceColumn: cancellationFee_fee
+
+		annotation SummarizationSetBy = Automatic
+
+	column cancellationFee_dueDateTime
+		dataType: string
+		lineageTag: b52dcb81-728c-4ad8-9b97-5d98b0a29945
+		summarizeBy: none
+		sourceColumn: cancellationFee_dueDateTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column cancellationFee_id
+		dataType: string
+		lineageTag: 0efcbf18-689d-4585-bbf2-d35fff70b7c8
+		summarizeBy: none
+		sourceColumn: cancellationFee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column noShowFee_name
+		dataType: string
+		lineageTag: 86b5b36f-5cd0-424c-9707-c0776ce64ea1
+		summarizeBy: none
+		sourceColumn: noShowFee_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column noShowFee_code
+		dataType: string
+		lineageTag: 084bbb1e-1fb0-432a-8aa3-ce7d9a9017ef
+		summarizeBy: none
+		sourceColumn: noShowFee_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column noShowFee_description
+		dataType: string
+		lineageTag: 39b5dc19-f1ee-438b-8987-185963edc6e6
+		summarizeBy: none
+		sourceColumn: noShowFee_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column noShowFee_fee
+		dataType: string
+		lineageTag: ccb85fa5-5aca-48d7-88c4-adc4df8ef98c
+		summarizeBy: none
+		sourceColumn: noShowFee_fee
+
+		annotation SummarizationSetBy = Automatic
+
+	column noShowFee_id
+		dataType: string
+		lineageTag: b5b96bcc-db0f-49f3-9b6e-d0e9b286d273
+		summarizeBy: none
+		sourceColumn: noShowFee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_expiryMonth
+		dataType: string
+		lineageTag: de5a04ae-8645-4f54-9aa4-a6bc5fb48972
+		summarizeBy: none
+		sourceColumn: paymentAccount_expiryMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_isActive
+		dataType: string
+		lineageTag: 034e12a5-d385-402e-9d86-86842f56ba0f
+		summarizeBy: none
+		sourceColumn: paymentAccount_isActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_accountNumber
+		dataType: string
+		lineageTag: b6231b40-175f-4bbe-8f7e-ef9fd8545ec3
+		summarizeBy: none
+		sourceColumn: paymentAccount_accountNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_payerEmail
+		dataType: string
+		lineageTag: 4adba598-93d4-4708-a50b-94bbdb17bd01
+		summarizeBy: none
+		sourceColumn: paymentAccount_payerEmail
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_expiryYear
+		dataType: string
+		lineageTag: a43d6dc6-b154-41f4-a57e-4dea99b2fc0d
+		summarizeBy: none
+		sourceColumn: paymentAccount_expiryYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_isVirtual
+		dataType: string
+		lineageTag: 268302f0-af9d-406f-a3e7-88e4845a4786
+		summarizeBy: none
+		sourceColumn: paymentAccount_isVirtual
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_accountHolder
+		dataType: string
+		lineageTag: 8f4606a0-09c8-4978-bbcd-70e361d1d907
+		summarizeBy: none
+		sourceColumn: paymentAccount_accountHolder
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentAccount_paymentMethod
+		dataType: string
+		lineageTag: f233123a-68f3-4ee8-9f70-1f2909cdc83a
+		summarizeBy: none
+		sourceColumn: paymentAccount_paymentMethod
+
+		annotation SummarizationSetBy = Automatic
+
+	column primaryGuest_phone
+		dataType: string
+		lineageTag: 4be39b47-2e62-4554-9446-1d9749fd861d
+		summarizeBy: none
+		sourceColumn: primaryGuest_phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column primaryGuest_email
+		dataType: string
+		lineageTag: c88c2465-df85-4341-ae58-f5b02924ec76
+		summarizeBy: none
+		sourceColumn: primaryGuest_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column primaryGuest_middleInitial
+		dataType: string
+		lineageTag: 79381f13-e41e-41f2-8040-106b1bbbdb6f
+		summarizeBy: none
+		sourceColumn: primaryGuest_middleInitial
+
+		annotation SummarizationSetBy = Automatic
+
+	column primaryGuest_lastName
+		dataType: string
+		lineageTag: 20c984b4-2ec9-4172-aa33-a1999785400b
+		summarizeBy: none
+		sourceColumn: primaryGuest_lastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column primaryGuest_firstName
+		dataType: string
+		lineageTag: 61e1c0a0-2e27-4d14-aedb-5dee57e39e41
+		summarizeBy: none
+		sourceColumn: primaryGuest_firstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column primaryGuest_address
+		dataType: string
+		lineageTag: 378cee7c-dfb4-4657-a74c-723df0df30d5
+		summarizeBy: none
+		sourceColumn: primaryGuest_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column property_name
+		dataType: string
+		lineageTag: e4ab2934-fe40-4875-b4ac-6a7aa17fe665
+		summarizeBy: none
+		sourceColumn: property_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column property_code
+		dataType: string
+		lineageTag: 7bdbb7fe-2237-4cf2-9550-3e990ac006fb
+		summarizeBy: none
+		sourceColumn: property_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column property_description
+		dataType: string
+		lineageTag: c3cb20f9-7559-4982-ac06-1e1b5650338d
+		summarizeBy: none
+		sourceColumn: property_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column property_id
+		dataType: string
+		lineageTag: 017c2bda-5283-4e28-847e-ceebc82c90f1
+		summarizeBy: none
+		sourceColumn: property_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ratePlan_name
+		dataType: string
+		lineageTag: eb047250-25c9-4067-be5c-97419154c1d2
+		summarizeBy: none
+		sourceColumn: ratePlan_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ratePlan_code
+		dataType: string
+		lineageTag: 761cb095-bf69-4a2e-815a-e45bf1713524
+		summarizeBy: none
+		sourceColumn: ratePlan_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column ratePlan_description
+		dataType: string
+		lineageTag: d80fbd63-e801-4709-8ad7-46a2fde50647
+		summarizeBy: none
+		sourceColumn: ratePlan_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column ratePlan_isSubjectToCityTax
+		dataType: string
+		lineageTag: 3d397aef-1827-4416-9e14-87a2877720a9
+		summarizeBy: none
+		sourceColumn: ratePlan_isSubjectToCityTax
+
+		annotation SummarizationSetBy = Automatic
+
+	column ratePlan_id
+		dataType: string
+		lineageTag: d9a7e946-ba58-455e-a94d-118bcbf36336
+		summarizeBy: none
+		sourceColumn: ratePlan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalGrossAmount_currency
+		dataType: double
+		lineageTag: 9ed1f789-998b-48f4-8ccf-a5b3102d32a2
+		summarizeBy: sum
+		sourceColumn: totalGrossAmount_currency
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column totalGrossAmount_amount
+		dataType: double
+		lineageTag: 53b143df-3234-4e18-9a88-efa283f13b78
+		summarizeBy: sum
+		sourceColumn: totalGrossAmount_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_name
+		dataType: string
+		lineageTag: 304a1c3b-b5aa-477a-af60-af832f4a2baf
+		summarizeBy: none
+		sourceColumn: unit_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_description
+		dataType: string
+		lineageTag: 35c4e451-270f-449e-b182-319883162914
+		summarizeBy: none
+		sourceColumn: unit_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_unitGroupId
+		dataType: string
+		lineageTag: bade07be-e8fe-41f8-8789-05b397651a77
+		summarizeBy: none
+		sourceColumn: unit_unitGroupId
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_id
+		dataType: string
+		lineageTag: 371d7af5-4232-4985-9ddb-41fa8fc918e7
+		summarizeBy: none
+		sourceColumn: unit_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitGroup_name
+		dataType: string
+		lineageTag: abe7c39e-6587-48bd-a9d4-4a6f72889f81
+		summarizeBy: none
+		sourceColumn: unitGroup_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitGroup_code
+		dataType: string
+		lineageTag: f8768e70-2ef7-4369-acdd-1d7dcac33634
+		summarizeBy: none
+		sourceColumn: unitGroup_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitGroup_description
+		dataType: string
+		lineageTag: 547b6c19-45a2-420f-b3ce-8fe0be06f006
+		summarizeBy: none
+		sourceColumn: unitGroup_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitGroup_type
+		dataType: string
+		lineageTag: 152e3ace-0ae7-49eb-b09f-7f8659eb3f2e
+		summarizeBy: none
+		sourceColumn: unitGroup_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitGroup_id
+		dataType: string
+		lineageTag: cee5bfac-71d5-41a3-b16c-398ae71e6471
+		summarizeBy: none
+		sourceColumn: unitGroup_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Daysstay = DATEDIFF(silver_reservations[checkInTime],silver_reservations[checkOutTime],DAY)
+		formatString: 0
+		lineageTag: 54845204-5052-4be9-b6f9-ecf121467b8d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition silver_reservations = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("a2cuqgr5ukpeppo5hafacatsom-6wvdaepgs6mujdbsi2znglvxda.datawarehouse.fabric.microsoft.com", "Bronze_Layer"),
+				    dbo_silver_reservations = Source{[Schema="dbo",Item="silver_reservations"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_silver_reservations,{{"checkInTime", type datetimezone}, {"checkOutTime", type datetimezone}}),
+				    #"Extracted Date" = Table.TransformColumns(#"Changed Type",{{"checkInTime", DateTime.Date, type date}, {"checkOutTime", DateTime.Date, type date}})
+				in
+				    #"Extracted Date"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

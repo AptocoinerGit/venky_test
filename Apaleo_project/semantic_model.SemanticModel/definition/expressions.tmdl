@@ -1,0 +1,11 @@
+expression 'DirectLake - Bronze_Layer' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/1130aaf5-97e6-4499-8c32-46b2d32eb718/5b18df32-d724-45d6-8818-c07c3e258af9", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 8b65c587-58fe-4f2f-85a3-ddd449683e4f
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[bronze_folios]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[bronze_properties]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[bronze_reservations]"}},"objectType":"Table"}]
+

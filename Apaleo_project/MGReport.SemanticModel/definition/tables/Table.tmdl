@@ -1,0 +1,729 @@
+table Table
+	lineageTag: f4236160-9311-4802-b6e3-dec9d2f6e5f8
+
+	measure TotalHousecount = sum(property_performance[houseCount])
+		formatString: 0
+		lineageTag: 119193b4-aa3e-4556-a18a-39a283083e49
+
+	measure HousecountToday = ```
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalHousecount],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: fcf197b4-eb1a-4be3-b972-6533894368d9
+
+	measure HouseCountMTD = CALCULATE([TotalHousecount],DATESMTD('Date'[Date]))
+		formatString: #,0.0
+		lineageTag: 7d4a689f-f971-4e86-95ca-25ab840b8b82
+
+	measure HouseCountYTD = CALCULATE([TotalHousecount],DATESYTD('Date'[Date]))
+		formatString: #,0
+		lineageTag: 64105d66-3194-4274-9363-cb805205c7b5
+
+	measure OutOfOrdercount = sum(property_performance[outOfOrderCount])
+		formatString: 0
+		lineageTag: 6fb092a4-cfe0-411b-81b6-dc81b3c25f06
+
+	measure OutofOrdercountToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [OutOfOrdercount],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: bbeb0043-a70a-4073-9fdd-3c9da4b5520a
+
+	measure OutOfOrderMTD = CALCULATE([OutOfOrdercount],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 533b419d-cbf6-4d23-972f-48cfd9327069
+
+	measure OutOfOrderYTD = CALCULATE([OutOfOrdercount],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 1d5de718-ffa8-414c-b226-381eca93cf04
+
+	measure soldcount = sum(property_performance[soldCount])
+		formatString: 0
+		lineageTag: 67a592de-3d40-4194-9e61-247037d9a5e9
+
+	measure SoldCountToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [soldcount],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 06de190d-646b-4cdb-b210-2d4414e5f05f
+
+	measure SoldCountMTD = CALCULATE([soldcount],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: bb7b6bc5-3030-4db7-adbd-9ba458e6bb39
+
+	measure SoldCountYTD = CALCULATE([soldcount],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: bbd33428-c28e-4dba-951c-08c4f9568fea
+
+	measure UnsoldCount = sum(property_performance[unsoldCount])
+		formatString: 0
+		lineageTag: fc88359d-f784-4979-afa0-22f31d2c2478
+
+	measure UnsoldCountToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [UnsoldCount],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 3c2f4075-6dd3-4930-bc18-760f465f7193
+
+	measure UnsoldCountMTD = CALCULATE([UnsoldCount],DATESMTD('Date'[Date]))
+		formatString: #,0
+		lineageTag: 70d11932-9e13-4be8-be5b-f945392e8c6a
+
+	measure UnsoldCountYTD = CALCULATE([UnsoldCount],DATESYTD('Date'[Date]))
+		formatString: #,0
+		lineageTag: c816a4f7-5c2d-497b-915d-bac559eb1eff
+
+	measure Tentatively_blocked = sum(property_performance[tentativelyBlockedCount])
+		formatString: 0
+		lineageTag: c7fd6855-cd29-4861-bad9-f427bd785864
+
+	measure Tentatively_blockedMTD = CALCULATE([Tentatively_blocked],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: cc948501-7ed4-4eb1-9e48-8c1c9a8ab2e3
+
+	measure Tentatively_blockedYTD = CALCULATE([Tentatively_blocked],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 092a06ae-9071-4d24-9db9-3a5ee7eb67d3
+
+	measure TotalArrieArrivals = sum(property_performance[arrivalsCount])
+		formatString: 0
+		lineageTag: f848b7cf-39a5-4736-8e5c-76de0644f194
+
+	measure ArrivalsMTD = CALCULATE([TotalArrieArrivals],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: be53b236-2d44-4ba3-939b-33c1f97bc04e
+
+	measure ArrivalsYTD = CALCULATE([TotalArrieArrivals],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 0df810b7-122b-4cd8-b39d-7c4b854e8ac4
+
+	measure totalDeparture = sum(property_performance[departuresCount])
+		formatString: 0
+		lineageTag: b336e715-4905-4c4c-aeeb-0476120dfc9e
+
+	measure TotalDepartureToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [totalDeparture],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: a784c6f0-6ac8-489c-817e-239f55c97bbf
+
+	measure DepartureMTD = CALCULATE([totalDeparture],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 40efa6ea-b5a9-413e-9f52-82fbc2d47d4d
+
+	measure DepartureYTD = CALCULATE([totalDeparture],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 01e56767-5fc4-4f61-8643-63dda420d4cf
+
+	measure totalNo_Show = sum(property_performance[noShowsCount])
+		formatString: 0
+		lineageTag: 3a781e4c-c947-46a7-b7e3-278c6e467f8b
+
+	measure No_ShowToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [totalNo_Show],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 50656457-1bf0-4ed2-8a8c-4c2178acef2b
+
+	measure No_ShowMTD = CALCULATE([totalNo_Show],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 3dba2991-3364-4663-b6f4-3295785bb6cc
+
+	measure No_ShowYTD = CALCULATE([totalNo_Show],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 93d4dc5e-8afe-483d-bf29-ec30368bd10b
+
+	measure TotalCancellation = sum(property_performance[cancellationsCount])
+		formatString: 0
+		lineageTag: 50b6f2be-273e-4acf-ae0e-f8ee3293c6f8
+
+	measure CancellationToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalCancellation],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 0910f655-3b11-4eac-822e-344c6a5a7ceb
+
+	measure CancellationMTD = CALCULATE([TotalCancellation],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 0a47c710-b250-4751-a6e7-0580e10422f1
+
+	measure CancellationYTD = CALCULATE([TotalCancellation],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 1fc8a266-c4bd-408a-af78-da25995221c7
+
+	measure TotalNetUnit = sum(property_performance[netUnitRevenue_amount])
+		lineageTag: 28d8211b-c81d-4033-8d5b-672659c82eca
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NetUnitToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalNetUnit],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		lineageTag: 18b97959-39a2-4c15-ab5f-45619b7398e1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NetUnitMTD = CALCULATE([TotalNetUnit],DATESMTD('Date'[Date]))
+		lineageTag: 49188957-d17d-406a-9b43-6670d4c08f19
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NetUnitYTD = CALCULATE([TotalNetUnit],DATESYTD('Date'[Date]))
+		formatString: #,0.00
+		lineageTag: f42fb4d1-6191-430e-a92d-cd7d0672d0b1
+
+	measure TotalGrossUnitRevenue = sum(property_performance[grossAccommodationRevenue_amount])
+		formatString: 0
+		lineageTag: 725930ed-1432-43db-8e95-2685408dae3c
+
+	measure GrossUnitRevenueToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalGrossUnitRevenue],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: a71d3bbf-6315-4190-b0f0-87fa31987448
+
+	measure GrossUnitRevenueMTD = CALCULATE([TotalGrossUnitRevenue],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: fa4c4915-11df-42af-97d1-6e09d1c32db2
+
+	measure GrossUnitYTD = CALCULATE([TotalGrossUnitRevenue],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 532b909e-c1b1-465e-99c1-31ba0def048b
+
+	measure TotalNetAccomodationRevenue = SUM(property_performance[netAccommodationRevenue_amount])
+		formatString: 0
+		lineageTag: 43d92d25-4455-48fa-a8e0-3f59a61a5cad
+
+	measure NetAccomodationRevenueToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalNetAccomodationRevenue],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 73a03a5f-e5e9-4cc8-b88d-374d4bce6f1e
+
+	measure NetAccomodationMTD = CALCULATE([TotalNetAccomodationRevenue],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 4108d15e-544d-4ce7-82fd-9c9373107d37
+
+	measure NetAccomodationYTD = CALCULATE([TotalNetAccomodationRevenue],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 41cb766c-f603-491b-bc17-81bc89e04ddd
+
+	measure Net_Accommodation_Revenues = sum(property_performance[netAccommodationRevenue_amount])
+		formatString: 0
+		lineageTag: e61fd84a-e7cb-4231-8b3f-459161d98885
+
+	measure NetAccommodationRevenuesToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalNetAccomodationRevenue],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 62ff6ba3-7a2c-4e2c-9b84-c6d9adca152e
+
+	measure NETAccomodationRevenueYTD = CALCULATE([TotalNetAccomodationRevenue],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 1d6b2dc5-2fe3-43a9-bd4d-4aa727df9fb3
+
+	measure TotalNetFood&BeveragesRevenues = sum(property_performance[netFoodAndBeveragesRevenue_amount])
+		formatString: 0
+		lineageTag: c690ea58-f815-4fd4-81d8-6bd947efed5b
+
+	measure NetFood&BeveragesRevenuesToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalNetFood&BeveragesRevenues],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: a48c1de6-beef-45bd-a7f2-c23541868d7a
+
+	measure NetFood&BeveragesRevenuesMTD = CALCULATE([TotalNetFood&BeveragesRevenues],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 4ded99ae-d0db-44d9-994a-3c92858c5376
+
+	measure NetFood&BeveragesRevenuesYTD = CALCULATE([TotalNetFood&BeveragesRevenues],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: d43b0fc4-9df5-4ccc-98f7-7c208e27a70e
+
+	measure TotalGrossFood&BeveragesRevenues = sum(property_performance[grossFoodAndBeveragesRevenue_amount])
+		formatString: 0
+		lineageTag: eff0e3fb-4137-4fa1-9c6e-0aaeed023e63
+
+	measure GrossFood&BeveragesRevenuesToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalGrossFood&BeveragesRevenues],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 9a0000a5-45b5-4d60-86d9-d239734642f4
+
+	measure GrossFood&BeveragesRevenuesMTD = CALCULATE([TotalGrossFood&BeveragesRevenues],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: ab122f96-6d49-45a1-8486-bcde86bfe8f2
+
+	measure GrossFood&BeveragesRevenuesYTD = CALCULATE([TotalGrossFood&BeveragesRevenues],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 35427bda-6bf5-40b2-97ff-098030a72f82
+
+	measure TotalNetADR = sum(property_performance[netAdr_amount])
+		lineageTag: ba48307b-f5d2-400c-90ec-28a92f854e6b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NetADRToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalNetADR],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		lineageTag: eb8c35c7-ec9e-49ef-a574-1e3814a661a4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NetADRMTD = CALCULATE([TotalNetADR],DATESMTD('Date'[Date]))
+		lineageTag: cb76951b-e156-4a55-a695-dad4a7d10821
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NetADRYTD = CALCULATE([TotalNetADR],DATESYTD('Date'[Date]))
+		lineageTag: 34b339b9-1d41-43f7-80b6-f811ff5aea9f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure GrossADR = sum(property_performance[grossAdr_amount])
+		formatString: 0
+		lineageTag: b7804751-c816-4341-af8f-3856c0ee3809
+
+	measure GrossADRToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [GrossADR],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 6680ef3b-d737-49e3-9e20-90d773b60e0f
+
+	measure GrossADRMTD = CALCULATE([GrossADR],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 3232f2a1-cf1d-4df8-8556-8d3c0aa70cf7
+
+	measure GrossADRYTD = CALCULATE([GrossADR],DATESYTD('Date'[Date]))
+		formatString: #,0
+		lineageTag: 14e13dd7-c4e0-4b60-98e5-7fead4b7ecf7
+
+	measure TotalRevenuePAR = sum(property_performance[revPar_amount])
+		lineageTag: cedb992e-e0a1-4a36-8fd1-24dbb42cbaab
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Revnue_PARToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalRevenuePAR],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		lineageTag: 6f92c381-2d91-4afc-9c75-7464268dfab8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure RevenuePARMTD = CALCULATE([TotalRevenuePAR],DATESMTD('Date'[Date]))
+		formatString: #,0.00
+		lineageTag: c49a7f7b-b00b-4b92-bfc9-4d65c8e2adc3
+
+	measure RevenuePARYTD = CALCULATE([TotalRevenuePAR],DATESYTD('Date'[Date]))
+		formatString: #,0.00
+		lineageTag: 33030628-1808-4bad-9a72-f689f110527c
+
+	measure TotalGrossAccomodationRevenue = sum(property_performance[grossAccommodationRevenue_amount])
+		formatString: 0
+		lineageTag: 577a5f55-3fa4-497f-b3fa-c66506b0666a
+
+	measure GrossAccomodationRevenueToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalGrossAccomodationRevenue],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: f374b820-66e7-4c73-9346-c5d592efd3a9
+
+	measure GrossAccomodationRevenueMTD = CALCULATE([TotalGrossAccomodationRevenue],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: c11b5186-0792-413a-bd8d-3d52e8d1ed5f
+
+	measure GrossAccomodationRevenueYTD = CALCULATE([TotalGrossAccomodationRevenue],DATESYTD('Date'[Date]))
+		formatString: #,0
+		lineageTag: d64d9e33-5435-4564-b0ee-2d2179159e3d
+
+	measure TotalgrossOtherRevenue_amount = sum(property_performance[grossOtherRevenue_amount])
+		formatString: 0
+		lineageTag: bcd308cf-9324-471d-9de4-4794f2d68bc3
+
+	measure grossOtherRevenue_amountToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalgrossOtherRevenue_amount],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 79f04f53-4281-45c1-bfd8-4c654f7accf3
+
+	measure grossOtherRevenue_amountMTD = CALCULATE([TotalgrossOtherRevenue_amount],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: e081541c-3ab9-4013-b2e7-dff709e4413c
+
+	measure grossOtherRevenue_amountYTD = CALCULATE([TotalgrossOtherRevenue_amount],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 30dc171c-2b0e-43c4-b02d-a9b336be8d3e
+
+	measure TotalnetOtherRevenue_amount = sum(property_performance[netOtherRevenue_amount])
+		formatString: 0
+		lineageTag: fd1c708b-59e8-4aa2-be78-1edcba536ba1
+
+	measure netOtherRevenue_amountToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalnetOtherRevenue_amount],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 91e34ad4-eb02-4468-8a17-ea8f426438d9
+
+	measure netOtherRevenue_amountMTD = CALCULATE([TotalnetOtherRevenue_amount],DATESMTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 0f49b02b-f6b7-48bc-a41b-7eb3974b0bd1
+
+	measure netOtherRevenue_amountYTD = CALCULATE([TotalnetOtherRevenue_amount],DATESYTD('Date'[Date]))
+		formatString: 0
+		lineageTag: 016e9749-ad11-4a8b-8cad-3dd9b29fe924
+
+	measure 'Occupancy Today' = ```
+			
+			DIVIDE(
+			    CALCULATE(SUM('property_performance'[soldCount]), 'property_performance'[BusinessDate] = TODAY()),
+			    CALCULATE(SUM('property_performance'[houseCount]), 'property_performance'[BusinessDate] = TODAY())
+			) 
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 1059db0a-472e-4e07-8dfa-6eb7d76bd4c9
+
+	measure 'Occupancy MTD' = ```
+			
+			DIVIDE(
+			    CALCULATE(SUM('property_performance'[soldCount]), DATESMTD('Date'[Date])),
+			    CALCULATE(SUM('property_performance'[houseCount]), DATESMTD('Date'[Date]))
+			) 
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: d1bbbbdb-950f-4598-bd09-bcdc3934c25c
+
+	measure 'Occupancy YTD' = ```
+			
+			DIVIDE(
+			    CALCULATE(SUM('property_performance'[soldCount]), DATESYTD('Date'[Date])),
+			    CALCULATE(SUM('property_performance'[houseCount]), DATESYTD('Date'[Date]))
+			) 
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3d6d6907-4eb7-422c-bb2a-3ae5df50e514
+
+	measure Tentatively_blockedToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [Tentatively_blocked],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 6f19effa-e93d-4ee6-a6e9-e6c752aa9be5
+
+	measure ArrivalsToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalArrieArrivals],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0
+		lineageTag: 6ca26b4f-fdbb-4880-b31c-989ffcc00293
+
+	measure RevenuePARToday =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [TotalRevenuePAR],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		lineageTag: 51e8f98a-6baf-4092-a1f0-229aa9bf0415
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Occupancy Today %' = ```
+			
+			DIVIDE(
+			    SUM('property_performance'[soldCount]),
+			    SUM('property_performance'[houseCount]),
+			    0
+			)
+			
+			```
+		lineageTag: cec74d00-e393-4571-a3e7-4ab0b4884ba6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure OccupationTodayPer =
+			
+			VAR SelectedDate =
+			    MAX ( 'Date'[Date] )   -- picks selected date (or BLANK if none)
+			RETURN
+			CALCULATE (
+			    [Occupancy Today %],
+			    'Date'[Date] =
+			        IF (
+			            ISBLANK ( SelectedDate ),
+			            TODAY(),          -- if no date selected → today
+			            SelectedDate      -- if date selected → that date
+			        )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 9bd22191-f583-42b7-bc12-7170351ac72f
+
+	measure 'Occupancy %' = ```
+			
+			DIVIDE (
+			    SUM ( 'property_performance'[soldItemsCount] ),
+			    SUM ( 'property_performance'[houseItemsCount] )
+			        - ( SUM ( 'property_performance'[outOfOrderItemsCount] )
+			        + SUM ( 'property_performance'[tentativelyBlockedItemsCount] ) )
+			) 
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: fd680ffa-5d96-40ad-a663-29af6151bd28
+
+	column Column
+		formatString: 0
+		lineageTag: ad3e9a94-873b-4adf-b22e-a0b9651f424e
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Table = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = b82fdb92374a4344b38a0331aa168c2f
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":null}
+
+	annotation 277cc1b9-af89-4597-8e15-cacc25c0886b = To use special characters in a calculated table name, enclose the entire name in brackets ( [] ) and add a ] to any closing brackets in the name.
+

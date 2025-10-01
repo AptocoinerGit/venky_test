@@ -1,0 +1,9 @@
+relationship 05744bb2-5a26-480e-958d-bf388ee43686
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimDate.Date
+	toColumn: LocalDateTable_fb916dda-1d44-4cd6-8ce8-17e21c34c1b0.Date
+
+relationship 6f06abc2-c1e9-a315-bf9a-ae28e6ceed53
+	fromColumn: property_performance.BusinessDate
+	toColumn: DimDate.Date
+
