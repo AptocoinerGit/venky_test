@@ -1,0 +1,35 @@
+table Measure
+	lineageTag: 0302e318-b77c-4786-947b-5cc88f8213a2
+
+	measure TotalReservation = count(silver_reservations[bookingId])
+		formatString: 0
+		lineageTag: 169dc41e-d9f3-4bd5-81f6-e4e2e4cee80f
+
+	measure CustomerInHouse = sum(silver_reservations[adults])
+		formatString: 0
+		lineageTag: 045fa0f0-313e-4c6e-bc75-36a8fa09790d
+
+	measure AvgDayStay = AVERAGE(silver_reservations[Daysstay])
+		lineageTag: d466f5a2-ab21-4084-80e9-7269b6ad688f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column1
+		dataType: string
+		lineageTag: 9cf1b324-db56-437a-915d-2228aa6a7f05
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Measure = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

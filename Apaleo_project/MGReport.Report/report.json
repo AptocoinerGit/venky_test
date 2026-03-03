@@ -1,0 +1,640 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "Presentation524004623059226937.png",
+            "path": "Presentation524004623059226937.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Presentation5.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Presentation524004623059226937.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"displayArea\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+      "displayName": "summary",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1041.00,
+      "name": "5f971226a452e87f0563",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00b90bd822a6b7ed2e84\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1155.142857142857,\"y\":612.8571428571429,\"z\":38000,\"width\":152.85714285714286,\"height\":34.285714285714285,\"tabOrder\":38000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NETAccomodationRevenueYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NETAccomodationRevenueYTD\"},\"Name\":\"Table.NETAccomodationRevenueYTD\",\"NativeReferenceName\":\"NETAccomodationRevenueYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NETAccomodationRevenueYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.29,
+          "width": 152.86,
+          "x": 1155.14,
+          "y": 612.86,
+          "z": 38000.00
+        },
+        {
+          "config": "{\"name\":\"04b85bce70539927d0c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.9411764705883,\"y\":363.5294117647059,\"z\":17000,\"width\":155.29411764705884,\"height\":38.23529411764706,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.Tentatively_blockedYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Tentatively_blockedYTD\"},\"Name\":\"Table.Tentatively_blockedYTD\",\"NativeReferenceName\":\"Tentatively_blockedYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Tentatively_blockedYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 38.24,
+          "width": 155.29,
+          "x": 1152.94,
+          "y": 363.53,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"0858eaf2e09c8256db42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":974.2857142857143,\"y\":683.4285627092635,\"z\":43000,\"width\":174.2857142857143,\"height\":34.285714285714285,\"tabOrder\":43000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetFood&BeveragesRevenuesMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetFood&BeveragesRevenuesMTD\"},\"Name\":\"Table.NetFood&BeveragesRevenuesMTD\",\"NativeReferenceName\":\"NetFood&BeveragesRevenuesMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetFood&BeveragesRevenuesMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.29,
+          "width": 174.29,
+          "x": 974.29,
+          "y": 683.43,
+          "z": 43000.00
+        },
+        {
+          "config": "{\"name\":\"0d37a3dcde71cd2b09f6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":298.6666666666667,\"z\":9000,\"width\":195.33333333333334,\"height\":31.333333333333332,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.UnsoldCountToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"UnsoldCountToday\"},\"Name\":\"Table.UnsoldCountToday\",\"NativeReferenceName\":\"UnsoldCountToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"UnsoldCountToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.33,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 298.67,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"0f111f9ade83a93f531a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":970.0000000000001,\"y\":544.2857142857143,\"z\":31000,\"width\":181.42857142857144,\"height\":34.285714285714285,\"tabOrder\":31000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetUnitMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetUnitMTD\"},\"Name\":\"Table.NetUnitMTD\",\"NativeReferenceName\":\"NetUnitMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetUnitMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.29,
+          "width": 181.43,
+          "x": 970.00,
+          "y": 544.29,
+          "z": 31000.00
+        },
+        {
+          "config": "{\"name\":\"16de588fbb4bbfa77894\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.8571428571429,\"y\":368.5714285714286,\"z\":16000,\"width\":180,\"height\":31.42857142857143,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.Tentatively_blockedMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Tentatively_blockedMTD\"},\"Name\":\"Table.Tentatively_blockedMTD\",\"NativeReferenceName\":\"Tentatively_blockedMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Tentatively_blockedMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.43,
+          "width": 180.00,
+          "x": 972.86,
+          "y": 368.57,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"177f63c3d3236f68ff9b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1154.4705882352941,\"y\":926.4705882352941,\"z\":62000,\"width\":153.52941176470588,\"height\":38.23529411764706,\"tabOrder\":62000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.RevenuePVRYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"RevenuePARYTD\"},\"Name\":\"Table.RevenuePVRYTD\",\"NativeReferenceName\":\"RevenuePARYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"RevenuePARYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 38.24,
+          "width": 153.53,
+          "x": 1154.47,
+          "y": 926.47,
+          "z": 62000.00
+        },
+        {
+          "config": "{\"name\":\"1864949300982596c8b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920.9967796832046,\"y\":19.187432910066764,\"z\":63000,\"width\":300.02167823013485,\"height\":75.00541955753371,\"tabOrder\":63000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Date.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"Date.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.01,
+          "width": 300.02,
+          "x": 921.00,
+          "y": 19.19,
+          "z": 63000.00
+        },
+        {
+          "config": "{\"name\":\"204f076afe2a5e377d67\",\"layouts\":[{\"id\":0,\"position\":{\"x\":971.4285714285716,\"y\":925.0000000000001,\"z\":61000,\"width\":177.14285714285717,\"height\":37.85714285714286,\"tabOrder\":61000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.RevenuePVRMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"RevenuePARMTD\"},\"Name\":\"Table.RevenuePVRMTD\",\"NativeReferenceName\":\"RevenuePARMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"RevenuePARMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.86,
+          "width": 177.14,
+          "x": 971.43,
+          "y": 925.00,
+          "z": 61000.00
+        },
+        {
+          "config": "{\"name\":\"20c7eb06f7669b3a1611\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.9411764705883,\"y\":190.58823529411765,\"z\":2000,\"width\":155.29411764705884,\"height\":41.1764705882353,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.HouseCountYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"HouseCountYTD\"},\"Name\":\"Table.HouseCountYTD\",\"NativeReferenceName\":\"HouseCountYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"HouseCountYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.18,
+          "width": 155.29,
+          "x": 1152.94,
+          "y": 190.59,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"22324e51674c2cd24d48\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":234.66666666666666,\"z\":3000,\"width\":193.33333333333334,\"height\":31.333333333333332,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.OutofOrdercountToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OutofOrdercountToday\"},\"Name\":\"Table.OutofOrdercountToday\",\"NativeReferenceName\":\"OutofOrdercountToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OutofOrdercountToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.33,
+          "width": 193.33,
+          "x": 776.00,
+          "y": 234.67,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"22406b191ec35b324f25\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.8571428571429,\"y\":891.4285714285714,\"z\":58000,\"width\":175.71428571428572,\"height\":37.142857142857146,\"tabOrder\":58000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossADRMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossADRMTD\"},\"Name\":\"Table.GrossADRMTD\",\"NativeReferenceName\":\"GrossADRMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossADRMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.14,
+          "width": 175.71,
+          "x": 972.86,
+          "y": 891.43,
+          "z": 58000.00
+        },
+        {
+          "config": "{\"name\":\"23fee929085297620308\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":785.3333333333334,\"z\":48000,\"width\":195.33333333333334,\"height\":34,\"tabOrder\":48000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.netOtherRevenue_amountToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"netOtherRevenue_amountToday\"},\"Name\":\"Table.netOtherRevenue_amountToday\",\"NativeReferenceName\":\"netOtherRevenue_amountToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"netOtherRevenue_amountToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.00,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 785.33,
+          "z": 48000.00
+        },
+        {
+          "config": "{\"name\":\"247d0714f646cd37ba27\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.9411764705883,\"y\":298.8235294117647,\"z\":11000,\"width\":155.29411764705884,\"height\":31.176470588235293,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.UnsoldCountYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"UnsoldCountYTD\"},\"Name\":\"Table.UnsoldCountYTD\",\"NativeReferenceName\":\"UnsoldCountYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"UnsoldCountYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.18,
+          "width": 155.29,
+          "x": 1152.94,
+          "y": 298.82,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"282731fc59ea8c6cec46\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":891.3333333333334,\"z\":57000,\"width\":195.33333333333334,\"height\":36.666666666666664,\"tabOrder\":57000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossADRToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossADRToday\"},\"Name\":\"Table.GrossADRToday\",\"NativeReferenceName\":\"GrossADRToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossADRToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.67,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 891.33,
+          "z": 57000.00
+        },
+        {
+          "config": "{\"name\":\"2cad4fcea8925a0db31d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":192,\"z\":0,\"width\":193.33333333333334,\"height\":41.333333333333336,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.HousecountToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"HousecountToday\"},\"Name\":\"Table.HousecountToday\",\"NativeReferenceName\":\"HousecountToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"HousecountToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.33,
+          "width": 193.33,
+          "x": 776.00,
+          "y": 192.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3040801c20e8971e55a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1155.0588235294117,\"y\":782.9411764705883,\"z\":50000,\"width\":152.94117647058823,\"height\":35.88235294117647,\"tabOrder\":50000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.netOtherRevenue_amountYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"netOtherRevenue_amountYTD\"},\"Name\":\"Table.netOtherRevenue_amountYTD\",\"NativeReferenceName\":\"netOtherRevenue_amountYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"netOtherRevenue_amountYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.88,
+          "width": 152.94,
+          "x": 1155.06,
+          "y": 782.94,
+          "z": 50000.00
+        },
+        {
+          "config": "{\"name\":\"32f77c7659d584fb8226\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":582.6666666666666,\"z\":33000,\"width\":195.33333333333334,\"height\":34,\"tabOrder\":33000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossUnitRevenueToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossUnitRevenueToday\"},\"Name\":\"Table.GrossUnitRevenueToday\",\"NativeReferenceName\":\"GrossUnitRevenueToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossUnitRevenueToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.00,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 582.67,
+          "z": 33000.00
+        },
+        {
+          "config": "{\"name\":\"393e7cda614a808f571e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":645.3333333333334,\"z\":39000,\"width\":195.33333333333334,\"height\":36.666666666666664,\"tabOrder\":39000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossAccomodationRevenueToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossAccomodationRevenueToday\"},\"Name\":\"Table.GrossAccomodationRevenueToday\",\"NativeReferenceName\":\"GrossAccomodationRevenueToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossAccomodationRevenueToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.67,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 645.33,
+          "z": 39000.00
+        },
+        {
+          "config": "{\"name\":\"3c62c1143c1da15a7128\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1155.142857142857,\"y\":580,\"z\":35000,\"width\":152.85714285714286,\"height\":34.285714285714285,\"tabOrder\":35000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossUnitYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossUnitYTD\"},\"Name\":\"Table.GrossUnitYTD\",\"NativeReferenceName\":\"GrossUnitYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossUnitYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.29,
+          "width": 152.86,
+          "x": 1155.14,
+          "y": 580.00,
+          "z": 35000.00
+        },
+        {
+          "config": "{\"name\":\"3c6eb25f973fb8e934cf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":975.0000000000001,\"y\":818.5714285714287,\"z\":49000,\"width\":173.57142857142858,\"height\":36.42857142857143,\"tabOrder\":49000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.netOtherRevenue_amountMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"netOtherRevenue_amountMTD\"},\"Name\":\"Table.netOtherRevenue_amountMTD\",\"NativeReferenceName\":\"netOtherRevenue_amountMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"netOtherRevenue_amountMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.43,
+          "width": 173.57,
+          "x": 975.00,
+          "y": 818.57,
+          "z": 49000.00
+        },
+        {
+          "config": "{\"name\":\"43872b65db4a6a870965\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.8571428571429,\"y\":647.8571428571429,\"z\":40000,\"width\":175.71428571428572,\"height\":35,\"tabOrder\":40000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossAccomodationRevenueMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossAccomodationRevenueMTD\"},\"Name\":\"Table.GrossAccomodationRevenueMTD\",\"NativeReferenceName\":\"GrossAccomodationRevenueMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossAccomodationRevenueMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.00,
+          "width": 175.71,
+          "x": 972.86,
+          "y": 647.86,
+          "z": 40000.00
+        },
+        {
+          "config": "{\"name\":\"4730c0bca34b40bad745\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776.25,\"y\":335,\"z\":12000,\"width\":195,\"height\":31.25,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.OccupationTodayPer\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OccupationTodayPer\"},\"Name\":\"Table.OccupationTodayPer\",\"NativeReferenceName\":\"OccupationTodayPer\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OccupationTodayPer\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.25,
+          "width": 195.00,
+          "x": 776.25,
+          "y": 335.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"50b1bad933e26a2b2974\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1155.3333333333333,\"y\":506.6666666666667,\"z\":29000,\"width\":152.66666666666666,\"height\":36.666666666666664,\"tabOrder\":29000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.CancellationYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CancellationYTD\"},\"Name\":\"Table.CancellationYTD\",\"NativeReferenceName\":\"CancellationYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CancellationYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.67,
+          "width": 152.67,
+          "x": 1155.33,
+          "y": 506.67,
+          "z": 29000.00
+        },
+        {
+          "config": "{\"name\":\"51a4532bb517dc745d2c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":368,\"z\":15000,\"width\":195.33333333333334,\"height\":31.333333333333332,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.Tentatively_blockedToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Tentatively_blockedToday\"},\"Name\":\"Table.Tentatively_blockedToday\",\"NativeReferenceName\":\"Tentatively_blockedToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Tentatively_blockedToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.33,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 368.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"539696c9045e90cb5b68\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.3959082153611,\"y\":717.4836858555242,\"z\":46000,\"width\":176.17552035606755,\"height\":64.53954706113366,\"tabOrder\":46000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossFood&BeveragesRevenuesMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossFood&BeveragesRevenuesMTD\"},\"Name\":\"Table.GrossFood&BeveragesRevenuesMTD\",\"NativeReferenceName\":\"GrossFood&BeveragesRevenuesMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossFood&BeveragesRevenuesMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.54,
+          "width": 176.18,
+          "x": 972.40,
+          "y": 717.48,
+          "z": 46000.00
+        },
+        {
+          "config": "{\"name\":\"5c7358f5a2574a81e0ba\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":820,\"z\":51000,\"width\":195.33333333333334,\"height\":37.333333333333336,\"tabOrder\":51000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.grossOtherRevenue_amountToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"grossOtherRevenue_amountToday\"},\"Name\":\"Table.grossOtherRevenue_amountToday\",\"NativeReferenceName\":\"grossOtherRevenue_amountToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"grossOtherRevenue_amountToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.33,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 820.00,
+          "z": 51000.00
+        },
+        {
+          "config": "{\"name\":\"637a70cca790a1635436\",\"layouts\":[{\"id\":0,\"position\":{\"x\":971.4285714285714,\"y\":267.14285714285717,\"z\":7000,\"width\":181.42857142857144,\"height\":31.42857142857143,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.SoldCountMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"SoldCountMTD\"},\"Name\":\"Table.SoldCountMTD\",\"NativeReferenceName\":\"SoldCountMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"SoldCountMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.43,
+          "width": 181.43,
+          "x": 971.43,
+          "y": 267.14,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"653c79f23c9b542c7f82\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.1428571428572,\"y\":230.00000000000003,\"z\":4000,\"width\":179.2857142857143,\"height\":32.85714285714286,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.OutOfOrderMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OutOfOrderMTD\"},\"Name\":\"Table.OutOfOrderMTD\",\"NativeReferenceName\":\"OutOfOrderMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OutOfOrderMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 32.86,
+          "width": 179.29,
+          "x": 972.14,
+          "y": 230.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6f709ee368cd769e5f06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":589.5774839638697,\"y\":19.187432910066764,\"z\":64000,\"width\":300.02167823013485,\"height\":83.72697997120042,\"tabOrder\":64000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"property_performance.PropertyId\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"property_performance\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PropertyId\"},\"Name\":\"property_performance.PropertyId\",\"NativeReferenceName\":\"PropertyId\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 83.73,
+          "width": 300.02,
+          "x": 589.58,
+          "y": 19.19,
+          "z": 64000.00
+        },
+        {
+          "config": "{\"name\":\"769a74e6faf6ded76871\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.1428571428572,\"y\":403.5714285714286,\"z\":19000,\"width\":180.71428571428572,\"height\":31.42857142857143,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.ArrivalsMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ArrivalsMTD\"},\"Name\":\"Table.ArrivalsMTD\",\"NativeReferenceName\":\"ArrivalsMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ArrivalsMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.43,
+          "width": 180.71,
+          "x": 972.14,
+          "y": 403.57,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"7dac1e39be1aa2a8c501\",\"layouts\":[{\"id\":0,\"position\":{\"x\":971.4285714285714,\"y\":614.2857142857143,\"z\":37000,\"width\":177.14285714285717,\"height\":35,\"tabOrder\":37000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetAccomodationMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetAccomodationMTD\"},\"Name\":\"Table.NetAccomodationMTD\",\"NativeReferenceName\":\"NetAccomodationMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetAccomodationMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.00,
+          "width": 177.14,
+          "x": 971.43,
+          "y": 614.29,
+          "z": 37000.00
+        },
+        {
+          "config": "{\"name\":\"845fd032e65a03ad80ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1155.142857142857,\"y\":854.2857142857143,\"z\":54000,\"width\":152.85714285714286,\"height\":37.142857142857146,\"tabOrder\":54000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetADRYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetADRYTD\"},\"Name\":\"Table.NetADRYTD\",\"NativeReferenceName\":\"NetADRYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetADRYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.14,
+          "width": 152.86,
+          "x": 1155.14,
+          "y": 854.29,
+          "z": 54000.00
+        },
+        {
+          "config": "{\"name\":\"85b68ff5118c0d6af923\",\"layouts\":[{\"id\":0,\"position\":{\"x\":55.817986647466945,\"y\":20.931744992800105,\"z\":64001,\"width\":322.6977353056683,\"height\":66.283859143867,\"tabOrder\":64001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"GM Report\",\"textStyle\":{\"fontSize\":\"28pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 66.28,
+          "width": 322.70,
+          "x": 55.82,
+          "y": 20.93,
+          "z": 64001.00
+        },
+        {
+          "config": "{\"name\":\"8805601d018b118f3382\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776.1022914109234,\"y\":926.2297159314047,\"z\":60000,\"width\":195.36295326613433,\"height\":36.630553737400184,\"tabOrder\":60000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.RevenuePVRToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"RevenuePARToday\"},\"Name\":\"Table.RevenuePVRToday\",\"NativeReferenceName\":\"RevenuePARToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"RevenuePARToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.63,
+          "width": 195.36,
+          "x": 776.10,
+          "y": 926.23,
+          "z": 60000.00
+        },
+        {
+          "config": "{\"name\":\"8d84e11b044c68e23028\",\"layouts\":[{\"id\":0,\"position\":{\"x\":971.4285714285716,\"y\":580,\"z\":34000,\"width\":177.14285714285717,\"height\":32.85714285714286,\"tabOrder\":34000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossUnitRevenueMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossUnitRevenueMTD\"},\"Name\":\"Table.GrossUnitRevenueMTD\",\"NativeReferenceName\":\"GrossUnitRevenueMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossUnitRevenueMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 32.86,
+          "width": 177.14,
+          "x": 971.43,
+          "y": 580.00,
+          "z": 34000.00
+        },
+        {
+          "config": "{\"name\":\"8db1efea60e08eafb7d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.9411764705883,\"y\":537.0588235294118,\"z\":32000,\"width\":155.29411764705884,\"height\":42.94117647058824,\"tabOrder\":32000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetUnitYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetUnitYTD\"},\"Name\":\"Table.NetUnitYTD\",\"NativeReferenceName\":\"NetUnitYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetUnitYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 42.94,
+          "width": 155.29,
+          "x": 1152.94,
+          "y": 537.06,
+          "z": 32000.00
+        },
+        {
+          "config": "{\"name\":\"90f8a8914fecaf5ce786\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.8571428571429,\"y\":190,\"z\":1000,\"width\":178.57142857142858,\"height\":40,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.HouseCountMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"HouseCountMTD\"},\"Name\":\"Table.HouseCountMTD\",\"NativeReferenceName\":\"HouseCountMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"HouseCountMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 178.57,
+          "x": 972.86,
+          "y": 190.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9311ff66eb1a3418945a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":971.4285714285714,\"y\":298.5714285714286,\"z\":10000,\"width\":180,\"height\":31.42857142857143,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.UnsoldCountMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"UnsoldCountMTD\"},\"Name\":\"Table.UnsoldCountMTD\",\"NativeReferenceName\":\"UnsoldCountMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"UnsoldCountMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.43,
+          "width": 180.00,
+          "x": 971.43,
+          "y": 298.57,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"97beee24cfbf30930635\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.9411764705883,\"y\":404.70588235294116,\"z\":20000,\"width\":155.29411764705884,\"height\":31.176470588235293,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.ArrivalsYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ArrivalsYTD\"},\"Name\":\"Table.ArrivalsYTD\",\"NativeReferenceName\":\"ArrivalsYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ArrivalsYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.18,
+          "width": 155.29,
+          "x": 1152.94,
+          "y": 404.71,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"a864486c58ef2ab38ace\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.5,\"y\":333.75,\"z\":13000,\"width\":180,\"height\":31.25,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.Occupancy MTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Occupancy MTD\"},\"Name\":\"Table.Occupancy MTD\",\"NativeReferenceName\":\"Occupancy MTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Occupancy MTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.25,
+          "width": 180.00,
+          "x": 972.50,
+          "y": 333.75,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"aacde99c3ce46e13bfc5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":727.3333333333334,\"z\":45000,\"width\":195.33333333333334,\"height\":48.666666666666664,\"tabOrder\":45000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossFood&BeveragesRevenuesToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossFood&BeveragesRevenuesToday\"},\"Name\":\"Table.GrossFood&BeveragesRevenuesToday\",\"NativeReferenceName\":\"GrossFood&BeveragesRevenuesToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossFood&BeveragesRevenuesToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.67,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 727.33,
+          "z": 45000.00
+        },
+        {
+          "config": "{\"name\":\"ac54ec9f9ba99afe7cae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":971.4285714285714,\"y\":784.2857142857143,\"z\":52000,\"width\":177.14285714285717,\"height\":37.85714285714286,\"tabOrder\":52000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.grossOtherRevenue_amountMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"grossOtherRevenue_amountMTD\"},\"Name\":\"Table.grossOtherRevenue_amountMTD\",\"NativeReferenceName\":\"grossOtherRevenue_amountMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"grossOtherRevenue_amountMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.86,
+          "width": 177.14,
+          "x": 971.43,
+          "y": 784.29,
+          "z": 52000.00
+        },
+        {
+          "config": "{\"name\":\"bb8a9660678f23c397d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":854,\"z\":56000,\"width\":195.33333333333334,\"height\":36.666666666666664,\"tabOrder\":56000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetADRToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetADRToday\"},\"Name\":\"Table.NetADRToday\",\"NativeReferenceName\":\"NetADRToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetADRToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.67,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 854.00,
+          "z": 56000.00
+        },
+        {
+          "config": "{\"name\":\"bf4cf8c3a12c114f795b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":617.3333333333334,\"z\":36000,\"width\":195.33333333333334,\"height\":32.666666666666664,\"tabOrder\":36000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetAccommodationRevenuesToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetAccommodationRevenuesToday\"},\"Name\":\"Table.NetAccommodationRevenuesToday\",\"NativeReferenceName\":\"NetAccommodationRevenuesToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetAccommodationRevenuesToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 32.67,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 617.33,
+          "z": 36000.00
+        },
+        {
+          "config": "{\"name\":\"bf76b1ae5f877079443b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":970,\"y\":437.8571428571429,\"z\":22000,\"width\":182.85714285714286,\"height\":35.714285714285715,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.DepartureMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DepartureMTD\"},\"Name\":\"Table.DepartureMTD\",\"NativeReferenceName\":\"DepartureMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DepartureMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.71,
+          "width": 182.86,
+          "x": 970.00,
+          "y": 437.86,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"c614f25bbc761fe6c303\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":436.6666666666667,\"z\":21000,\"width\":195.33333333333334,\"height\":35.333333333333336,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.TotalDepartureToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"TotalDepartureToday\"},\"Name\":\"Table.TotalDepartureToday\",\"NativeReferenceName\":\"TotalDepartureToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"TotalDepartureToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.33,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 436.67,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"c94fc1fbba80b7b4c368\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1151.764705882353,\"y\":267.05882352941177,\"z\":8000,\"width\":156.47058823529412,\"height\":27.647058823529413,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.SoldCountYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"SoldCountYTD\"},\"Name\":\"Table.SoldCountYTD\",\"NativeReferenceName\":\"SoldCountYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"SoldCountYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 27.65,
+          "width": 156.47,
+          "x": 1151.76,
+          "y": 267.06,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"cb3cb7c74ab684070391\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1155.0588235294117,\"y\":818.2352941176471,\"z\":53000,\"width\":152.94117647058823,\"height\":37.05882352941177,\"tabOrder\":53000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.grossOtherRevenue_amountYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"grossOtherRevenue_amountYTD\"},\"Name\":\"Table.grossOtherRevenue_amountYTD\",\"NativeReferenceName\":\"grossOtherRevenue_amountYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"grossOtherRevenue_amountYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.06,
+          "width": 152.94,
+          "x": 1155.06,
+          "y": 818.24,
+          "z": 53000.00
+        },
+        {
+          "config": "{\"name\":\"cb53dfcba0588cacf361\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1154.7058823529412,\"y\":682.9411764705883,\"z\":44000,\"width\":153.52941176470588,\"height\":34.11764705882353,\"tabOrder\":44000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetFood&BeveragesRevenuesYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetFood&BeveragesRevenuesYTD\"},\"Name\":\"Table.NetFood&BeveragesRevenuesYTD\",\"NativeReferenceName\":\"NetFood&BeveragesRevenuesYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetFood&BeveragesRevenuesYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.12,
+          "width": 153.53,
+          "x": 1154.71,
+          "y": 682.94,
+          "z": 44000.00
+        },
+        {
+          "config": "{\"name\":\"cd1d05d08c1591966b7e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1151.764705882353,\"y\":334.11764705882354,\"z\":14000,\"width\":156.47058823529412,\"height\":31.176470588235293,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.Occupancy YTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Occupancy YTD\"},\"Name\":\"Table.Occupancy YTD\",\"NativeReferenceName\":\"Occupancy YTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Occupancy YTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.18,
+          "width": 156.47,
+          "x": 1151.76,
+          "y": 334.12,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"d6cb4728a82c5f46eae0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1151.764705882353,\"y\":436.47058823529414,\"z\":23000,\"width\":156.47058823529412,\"height\":41.76470588235294,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.DepartureYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DepartureYTD\"},\"Name\":\"Table.DepartureYTD\",\"NativeReferenceName\":\"DepartureYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DepartureYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 41.76,
+          "width": 156.47,
+          "x": 1151.76,
+          "y": 436.47,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"d79fa323fc15b8a5744c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1154.7058823529412,\"y\":647.0588235294118,\"z\":41000,\"width\":153.52941176470588,\"height\":35.88235294117647,\"tabOrder\":41000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossAccomodationRevenueYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossAccomodationRevenueYTD\"},\"Name\":\"Table.GrossAccomodationRevenueYTD\",\"NativeReferenceName\":\"GrossAccomodationRevenueYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossAccomodationRevenueYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.88,
+          "width": 153.53,
+          "x": 1154.71,
+          "y": 647.06,
+          "z": 41000.00
+        },
+        {
+          "config": "{\"name\":\"d8c38ca6147d7353761e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.7562246367324,\"y\":716.9122660034036,\"z\":47000,\"width\":155.24377536326745,\"height\":64.53954706113366,\"tabOrder\":47000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossFood&BeveragesRevenuesYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossFood&BeveragesRevenuesYTD\"},\"Name\":\"Table.GrossFood&BeveragesRevenuesYTD\",\"NativeReferenceName\":\"GrossFood&BeveragesRevenuesYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossFood&BeveragesRevenuesYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.54,
+          "width": 155.24,
+          "x": 1152.76,
+          "y": 716.91,
+          "z": 47000.00
+        },
+        {
+          "config": "{\"name\":\"dbafb8b55ce227a00463\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.8571428571429,\"y\":854.2857142857143,\"z\":55000,\"width\":175.71428571428572,\"height\":37.142857142857146,\"tabOrder\":55000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetADRMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetADRMTD\"},\"Name\":\"Table.NetADRMTD\",\"NativeReferenceName\":\"NetADRMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetADRMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.14,
+          "width": 175.71,
+          "x": 972.86,
+          "y": 854.29,
+          "z": 55000.00
+        },
+        {
+          "config": "{\"name\":\"dc533f109be2c748f4b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":682,\"z\":42000,\"width\":195.33333333333334,\"height\":34.666666666666664,\"tabOrder\":42000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetFood&BeveragesRevenuesToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetFood&BeveragesRevenuesToday\"},\"Name\":\"Table.NetFood&BeveragesRevenuesToday\",\"NativeReferenceName\":\"NetFood&BeveragesRevenuesToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetFood&BeveragesRevenuesToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.67,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 682.00,
+          "z": 42000.00
+        },
+        {
+          "config": "{\"name\":\"dfe7dc5fdee6bd187b13\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.9411764705883,\"y\":472.94117647058823,\"z\":26000,\"width\":155.29411764705884,\"height\":35.88235294117647,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.No_ShowYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"No_ShowYTD\"},\"Name\":\"Table.No_ShowYTD\",\"NativeReferenceName\":\"No_ShowYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"No_ShowYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.88,
+          "width": 155.29,
+          "x": 1152.94,
+          "y": 472.94,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"e412360ad9b4233eef42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":472,\"z\":24000,\"width\":195.33333333333334,\"height\":36,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.No_ShowToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"No_ShowToday\"},\"Name\":\"Table.No_ShowToday\",\"NativeReferenceName\":\"No_ShowToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"No_ShowToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 36.00,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 472.00,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"eccc82cfdd95d69b08e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":403.3333333333333,\"z\":18000,\"width\":195.33333333333334,\"height\":31.333333333333332,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.ArrivalsToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ArrivalsToday\"},\"Name\":\"Table.ArrivalsToday\",\"NativeReferenceName\":\"ArrivalsToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ArrivalsToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.33,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 403.33,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"ed7c492f85d1b8ebde48\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":506.6666666666667,\"z\":27000,\"width\":195.33333333333334,\"height\":37.333333333333336,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.CancellationToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CancellationToday\"},\"Name\":\"Table.CancellationToday\",\"NativeReferenceName\":\"CancellationToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CancellationToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.33,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 506.67,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"f1cd52d94dc3cee609f5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":266.6666666666667,\"z\":6000,\"width\":193.33333333333334,\"height\":31.333333333333332,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.SoldCountToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"SoldCountToday\"},\"Name\":\"Table.SoldCountToday\",\"NativeReferenceName\":\"SoldCountToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"SoldCountToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 31.33,
+          "width": 193.33,
+          "x": 776.00,
+          "y": 266.67,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"f4687ba5deeb7cd00cc5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1155.142857142857,\"y\":891.4285714285714,\"z\":59000,\"width\":152.85714285714286,\"height\":37.142857142857146,\"tabOrder\":59000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.GrossADRYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossADRYTD\"},\"Name\":\"Table.GrossADRYTD\",\"NativeReferenceName\":\"GrossADRYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"GrossADRYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.14,
+          "width": 152.86,
+          "x": 1155.14,
+          "y": 891.43,
+          "z": 59000.00
+        },
+        {
+          "config": "{\"name\":\"f5005d3fad9a710fe5ed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":970.0000000000001,\"y\":473.5714285714286,\"z\":25000,\"width\":181.42857142857144,\"height\":35.714285714285715,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.No_ShowMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"No_ShowMTD\"},\"Name\":\"Table.No_ShowMTD\",\"NativeReferenceName\":\"No_ShowMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"No_ShowMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.71,
+          "width": 181.43,
+          "x": 970.00,
+          "y": 473.57,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"f6369cfd8246b3808b36\",\"layouts\":[{\"id\":0,\"position\":{\"x\":970.0000000000001,\"y\":506.42857142857144,\"z\":28000,\"width\":181.42857142857144,\"height\":37.85714285714286,\"tabOrder\":28000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.CancellationMTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CancellationMTD\"},\"Name\":\"Table.CancellationMTD\",\"NativeReferenceName\":\"CancellationMTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"CancellationMTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.86,
+          "width": 181.43,
+          "x": 970.00,
+          "y": 506.43,
+          "z": 28000.00
+        },
+        {
+          "config": "{\"name\":\"fc4ef65ab93f83a4b271\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1152.9411764705883,\"y\":230,\"z\":5000,\"width\":155.29411764705884,\"height\":33.529411764705884,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.OutOfOrderYTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OutOfOrderYTD\"},\"Name\":\"Table.OutOfOrderYTD\",\"NativeReferenceName\":\"OutOfOrderYTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"OutOfOrderYTD\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 33.53,
+          "width": 155.29,
+          "x": 1152.94,
+          "y": 230.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"fdbcbf0187431b5193e9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":776,\"y\":538.6666666666666,\"z\":30000,\"width\":195.33333333333334,\"height\":42.666666666666664,\"tabOrder\":30000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.NetUnitToday\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetUnitToday\"},\"Name\":\"Table.NetUnitToday\",\"NativeReferenceName\":\"NetUnitToday\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"NetUnitToday\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 42.67,
+          "width": 195.33,
+          "x": 776.00,
+          "y": 538.67,
+          "z": 30000.00
+        }
+      ],
+      "width": 1308.00
+    }
+  ]
+}

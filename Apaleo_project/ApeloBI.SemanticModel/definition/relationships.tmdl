@@ -1,0 +1,18 @@
+relationship 1f1c5dbb-e206-3980-53f6-bf7d1e3bfdf3
+	fromColumn: silver_reservations.property_name
+	toColumn: silver_properties.name
+
+relationship 40b23437-aa1a-4886-8215-8cdb027190ae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: silver_reservations.checkOutTime
+	toColumn: LocalDateTable_5eeb3893-6934-4938-90de-97aa9c03d92b.Date
+
+relationship 6fa8a58e-3a20-4850-a474-69e5ca3a5ab1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.Date
+	toColumn: LocalDateTable_bb1a9687-946e-458d-9da6-d41c5f2be5be.Date
+
+relationship 67434411-7c4d-a6f4-31ec-9538ec3bd37a
+	fromColumn: silver_reservations.checkInTime
+	toColumn: Date.Date
+

@@ -1,0 +1,30 @@
+table Date
+	lineageTag: 4a653642-96a2-4666-8ee1-f09430e90d6d
+
+	column Date
+		formatString: General Date
+		lineageTag: f727d7c9-d980-407c-8215-5215f42d469c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: d9ab6187-e7b5-4997-a37d-a7791ccb36a6
+			defaultHierarchy: LocalDateTable_2396e683-8b66-4aea-8f84-819f6b5d6f62.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Date = calculated
+		mode: import
+		source = ```
+				
+				CALENDAR(
+				    MIN(property_performance[BusinessDate]),
+				    MAX(property_performance[BusinessDate])
+				)
+				
+				```
+
+	annotation PBI_Id = 6f0ad4a6128e4add897a2e4aacaa930c
+

@@ -1,0 +1,807 @@
+table measure
+	lineageTag: a46702bf-647b-4ffc-a75d-2bab16475798
+
+	measure hoousecount = SUM(property_performance[houseCount])
+		formatString: 0
+		lineageTag: 3870d219-a551-481d-9dff-5f7147aed025
+
+	measure houseYTD = ```
+			
+			CALCULATE(
+			    [hoousecount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 893a0cc0-06d1-4408-90f3-c8bcf8bd0222
+
+	measure houseMTD = ```
+			
+			CALCULATE(
+			    [hoousecount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: aeb6e882-7848-424f-909c-a0a35a32bedc
+
+	measure houseToday = ```
+			
+			CALCULATE(
+			    [hoousecount],
+			    DimDate[Date].[Date] = TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 0da33f7b-a7f2-462d-8245-e6689adf94a6
+
+	measure soldcount = ```
+			sum(property_performance[soldCount])
+			
+			```
+		formatString: 0
+		lineageTag: 6354885d-1296-482a-a796-9549fe66cc1b
+
+	measure soldMTD = ```
+			
+			CALCULATE(
+			    [soldcount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 68cbb576-3818-4a79-bc08-e3ae7889f0b9
+
+	measure soldYTD = ```
+			
+			CALCULATE(
+			    [soldcount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 93c95ad8-b203-4739-bd26-acc86e79e63d
+
+	measure soldToday = ```
+			
+			CALCULATE(
+			    [soldcount],
+			     DimDate[Date].[Date] = TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 37ab3e03-5d64-476c-9aa6-4eed3c1922e0
+
+	measure unsoldcount = sum(property_performance[unsoldCount])
+		formatString: 0
+		lineageTag: 97391431-d76c-4abf-9df2-4282f5fad216
+
+	measure unsoldMTD = ```
+			
+			 CALCULATE([unsoldcount],
+			 DATESMTD(DimDate[Date])
+			 )
+			```
+		formatString: 0
+		lineageTag: f54e29e9-f187-44a1-afbc-b8d4a2fd7aa8
+
+	measure unsoldYTD =
+			
+			CALCULATE([unsoldcount],
+			DATESYTD(DimDate[Date].[Date])
+			)
+		formatString: 0
+		lineageTag: 672525da-5f53-4105-9250-75ddb9e865a8
+
+	measure unsoldToday = ```
+			
+			CALCULATE(
+			    [unsoldcount],
+			    DimDate[Date].[Date] = TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 82016f91-3dd3-4b35-b3bc-a23bebfc6a8d
+
+	measure OOOcount = SUM(property_performance[outOfOrderCount])
+		formatString: 0
+		lineageTag: 5e760b51-c873-4d37-8da6-df974852e0a1
+
+	measure OOOYTD = ```
+			
+			CALCULATE(
+			    [OOOcount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: c25e3ccc-fe26-4503-a2eb-8070d8978388
+
+	measure OOOMTD = ```
+			
+			CALCULATE(
+			    [OOOcount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 9b7ad857-e37c-4c62-b214-08862191794c
+
+	measure OOOTODAY = ```
+			
+			CALCULATE(
+			    [OOOcount],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 298f4ebb-e68c-439d-b981-2e342a8b0265
+
+	measure occupencyper = ```
+			
+			DIVIDE([soldcount],[unsoldcount])
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 06279be1-e9b3-442c-a2b2-f3556c58161d
+
+	measure tentativelycount = SUM(property_performance[tentativelyBlockedCount])
+		formatString: 0
+		lineageTag: e3b6c7b3-eba5-410c-873a-d2a1647a588d
+
+	measure tentativeMTD = ```
+			
+			CALCULATE(
+			    [tentativelycount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 1803e80b-1cea-4baf-be75-dda5d6ebb51c
+
+	measure tentativeYTD = ```
+			
+			CALCULATE(
+			    [tentativelycount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: a3c190f5-94bf-40de-99a6-4e01a2787ae0
+
+	measure tentativeToday = ```
+			
+			CALCULATE(
+			    [tentativelycount],
+			    DimDate[Date].[Date] = TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: f4e7d58c-ade4-40da-a46e-0563001dfd75
+
+	measure arrivalescount = ```
+			SUM(property_performance[arrivalsCount]) 
+			```
+		formatString: 0
+		lineageTag: 81948d99-6cc3-4775-b9dc-8424a338c368
+
+	measure arrivalsYTD = ```
+			
+			CALCULATE(
+			    [arrivalescount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 0897a64a-cad1-4089-93b6-a418b6891685
+
+	measure arrivalsMTD = ```
+			
+			CALCULATE([arrivalescount],DATESMTD(DimDate[Date]))
+			
+			
+			```
+		formatString: 0
+		lineageTag: 6a4f14fe-8297-41cc-9829-6e18bd98ed85
+
+	measure arrivalsToday = ```
+			
+			CALCULATE(
+			    [arrivalescount],
+			    DimDate[Date]=TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: d528e597-6ae9-4f50-8b2d-481f4c04e430
+
+	measure depaturescount = SUM(property_performance[departuresCount])
+		formatString: 0
+		lineageTag: 70a93e40-0a0f-4466-828d-e6ff8d061197
+
+	measure depatureToday = ```
+			
+			CALCULATE(
+			    [depaturescount],
+			    DimDate[Date].[Date] = TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 85fe5927-d5be-4928-9060-6212dc0884ec
+
+	measure depatureYTD = ```
+			
+			CALCULATE(
+			    [depaturescount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: a3e9659a-93e1-42b1-93b2-2ef06dbb6758
+
+	measure depatureMTD = ```
+			
+			CALCULATE(
+			    [depaturescount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 8bbafb9e-75ec-4215-bce4-9f3d750ab141
+
+	measure noshowscount = SUM(property_performance[noShowsCount])
+		formatString: 0
+		lineageTag: af90fb20-8550-4fdf-9fc1-92b2b4b783db
+
+	measure noshowYTD = ```
+			
+			CALCULATE(
+			    [noshowscount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 68aad72e-2e23-402c-9a29-bdf6af6156de
+
+	measure noshowMTD = ```
+			
+			CALCULATE(
+			    [noshowscount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 935ff530-860d-4428-a4c6-8c046021da93
+
+	measure noshowToday = ```
+			
+			CALCULATE(
+			    [noshowscount],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 6dc68f01-2bf9-4683-8676-e15bfc6fd224
+
+	measure cancelcount = SUM(property_performance[cancellationsCount])
+		formatString: 0
+		lineageTag: 8125ee85-91a7-4477-9d37-3618497b90b5
+
+	measure cancelMTD = ```
+			
+			CALCULATE(
+			    [cancelcount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 2fe06f5b-90ba-432e-9d6d-304d89ba9744
+
+	measure cancelYTD = ```
+			
+			CALCULATE(
+			    [cancelcount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: adbab6e6-216c-44d1-a755-0f242b55f406
+
+	measure cancelToday = ```
+			
+			CALCULATE(
+			    [cancelcount],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 10ef7a9a-e337-4478-8f0a-30e384de5dc9
+
+	measure netunitrevenue = SUM(property_performance[netUnitRevenue_amount])
+		lineageTag: 52cbcee2-25b7-47f1-bbdb-028e8ee44d02
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netunitrevenueMTD = ```
+			
+			CALCULATE(
+			    [netunitrevenue],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		lineageTag: 5e3b2b55-facd-4b0e-bdcb-b1e41036676b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netunitrevenueYTD =
+			
+			CALCULATE(
+			    [netunitrevenue],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: 33a3ccdb-ca00-485d-afc8-cf897d4fce3d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netunitrevenueToday = ```
+			
+			CALCULATE(
+			    [netunitrevenue],
+			   DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		lineageTag: 7c1d2757-823e-46b2-9ea3-8f6938f16faa
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossunitrevenue = SUM(property_performance[grossUnitRevenue_amount])
+		lineageTag: b73b3648-2d55-43a7-becc-edc447353610
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossunitrevenueMTD =
+			
+			CALCULATE(
+			    [grossunitrevenue],
+			    DATESMTD(DimDate[Date])
+			)
+		lineageTag: dca1c3d4-4b00-454f-81a0-b8b6aca209b9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossunitrevenueYTD =
+			
+			CALCULATE(
+			    [grossunitrevenue],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: 5ebf8ea9-70bb-453d-a9cd-5e06f420c77e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossunitrevenueToday = ```
+			
+			CALCULATE(
+			    [grossunitrevenue],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		lineageTag: 058616f1-7944-4a55-ab6a-2b8615494029
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netaccomidationrevenue = SUM(property_performance[netAccommodationRevenue_amount])
+		lineageTag: 9d66e142-0b75-46d1-ae28-a26f19b85bad
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netaccomidationrevenueMTD =
+			
+			CALCULATE(
+			    [netaccomidationrevenue],
+			    DATESMTD(DimDate[Date])
+			)
+		lineageTag: d7e8289f-41df-4d63-8cf5-6ed00d53dd4d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netaccomidationrevenueYTD =
+			
+			CALCULATE(
+			    [netaccomidationrevenue],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: a83f993e-6a59-415c-887b-8e8d8eb2c15a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netaccomidationrevenueToday =
+			
+			CALCULATE(
+			    [netaccomidationrevenue],
+			    DimDate[Date].[Date]=TODAY()
+			)
+		lineageTag: d0ef16d7-67a4-499c-9b60-05021851ce54
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossaccomidationrevenue = SUM(property_performance[grossAccommodationRevenue_amount])
+		lineageTag: 0f5c2b4a-81d6-4f07-8c1a-358012387c8a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossaccomidationrevenueMTD =
+			
+			CALCULATE(
+			    [grossaccomidationrevenue],
+			    DATESMTD(DimDate[Date])
+			)
+		lineageTag: 5e950cd8-a838-4850-a3df-2891866b51c7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossaccomidationrevenueYTD = ```
+			
+			CALCULATE(
+			    [grossaccomidationrevenue],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		lineageTag: e6ad2b7e-d5c8-499c-b534-4bc2f5737027
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossaccomidationrevenueToday = ```
+			
+			CALCULATE(
+			    [grossaccomidationrevenue],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		lineageTag: 3f77dd5e-147e-4c40-8e3a-5b0f0fae2c92
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netfoodamount = SUM(property_performance[netFoodAndBeveragesRevenue_amount])
+		lineageTag: d2fd192f-d4b5-47f2-827b-0d235cf04dde
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netfoodamountMTD =
+			
+			CALCULATE(
+			    [netfoodamount],
+			    DATESMTD(DimDate[Date])
+			)
+		lineageTag: f7240306-8d14-40da-907a-e3e981ec95d3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netfoodamountYTD = ```
+			
+			CALCULATE(
+			    [netfoodamount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		lineageTag: 7c381635-de5c-4b13-b449-f16d03307c06
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netfoodamountToday = ```
+			
+			CALCULATE(
+			    [netfoodamount],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		lineageTag: 69a87f50-7d5b-4991-aac0-bb24e8f9fab1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossfoodamount = SUM(property_performance[grossFoodAndBeveragesRevenue_amount])
+		lineageTag: 8c88dd91-dc4f-4c81-99ef-296450c15134
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossfoodamountMTD = ```
+			
+			CALCULATE(
+			    [grossfoodamount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		lineageTag: 6de5c3c2-4aa8-4332-b794-f20cf2cce405
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossfoodamountYTD =
+			
+			CALCULATE(
+			    [grossfoodamount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: e8429c84-06ba-4fc3-9651-2cd45707a11c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossfoodamountToday = ```
+			
+			CALCULATE(
+			    [grossfoodamount],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		lineageTag: 10007c5c-3450-408b-96e8-1274faea8caa
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netotheramount = SUM(property_performance[netOtherRevenue_amount])
+		lineageTag: bf0b1da1-5486-43ec-93e4-8e17878fa715
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netotheramountMTD = ```
+			
+			CALCULATE(
+			    [netotheramount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		lineageTag: 83c14f59-bef8-4bb2-bc4a-d98103c28da2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netotheramountYTD =
+			
+			CALCULATE(
+			    [netotheramount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: 95d0d830-2b89-47c8-a838-334e28d11fd7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netotheramountToday = ```
+			
+			CALCULATE(
+			    [netotheramount],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		lineageTag: 8e840de8-9c0c-4348-abd4-ba803c5564d5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossotheramount = SUM(property_performance[grossOtherRevenue_amount])
+		lineageTag: ec883751-b7f5-495e-bac8-fec5f7671008
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossotheramountMTD = ```
+			
+			CALCULATE(
+			    [grossotheramount],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		lineageTag: b6fba8a6-d72c-4fb7-b298-9c80f447c9aa
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossotheramountYTD =
+			
+			CALCULATE(
+			    [grossotheramount],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: 6a7c8a39-bf73-4239-8996-d953980635a4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossotheramountToday =
+			
+			CALCULATE(
+			    [grossotheramount],
+			    DimDate[Date].[Date]=TODAY()
+			)
+		lineageTag: a3de4180-a8c3-4fdc-a105-c9de63208097
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netADR = SUM(property_performance[netAdr_amount])
+		lineageTag: 873ba143-eef6-4398-9ab5-1deb209ae6b5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netADRMTD = ```
+			
+			CALCULATE(
+			    [netADR],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		lineageTag: ec47d3e2-9a64-416e-b8d6-7b96a37aee94
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netADRYTD =
+			
+			CALCULATE(
+			    [netADR],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: 52cd4cf6-fae3-4763-895e-c4a62d4ede31
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure netADRToday =
+			
+			CALCULATE(
+			    [netADR],
+			    DimDate[Date].[Date]=TODAY()
+			)
+		lineageTag: 2d6b8741-6a74-41a9-bffd-5014904bba30
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossADR = SUM(property_performance[grossAdr_amount])
+		lineageTag: 65c29eed-ab62-4f5a-881b-46412db8ec0b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossADRMTD = ```
+			
+			CALCULATE(
+			    [grossADR],
+			    DATESMTD(DimDate[Date])
+			)
+			
+			```
+		lineageTag: 1d3ab8d3-2f25-4b39-b479-0a58d5355a53
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossADRYTD = ```
+			
+			CALCULATE(
+			    [grossADR],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		lineageTag: 9b4e1b14-62ac-4fad-ac2e-ff3ac9f9fabe
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure grossADRToday = ```
+			
+			CALCULATE(
+			    [grossADR],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		lineageTag: b9c900c1-39d0-4ef4-9408-9f773b5d5505
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure revPAR = SUM(property_performance[revPar_amount])
+		lineageTag: fbb1d742-0fc4-41be-bcb4-aa0e2781ecef
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure revPARMTD =
+			
+			CALCULATE(
+			    [revPAR],
+			    DATESMTD(DimDate[Date])
+			)
+		lineageTag: ede6f17d-c566-4766-af64-5c7556546d41
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure revPARYTD =
+			
+			CALCULATE(
+			    [revPAR],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+		lineageTag: 2a56f39a-4ec8-4f48-895a-619e4052263b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure revPARToday =
+			
+			CALCULATE(
+			    [revPAR],
+			    DimDate[Date].[Date]=TODAY()
+			)
+		lineageTag: a2f551cb-02dd-444f-a502-dd627806952a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure occupencyperMTD =
+			
+			CALCULATE(
+			    [occupencyper],
+			    DATESMTD(DimDate[Date])
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0f62bdc8-2e6c-455f-ad09-ae424b5412f6
+
+	measure occupencyperYTD = ```
+			
+			CALCULATE(
+			    [occupencyper],
+			    DATESYTD(DimDate[Date].[Date])
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: cc07b780-c88f-4cda-838b-bd10796405f6
+
+	measure occupencyperToday = ```
+			
+			CALCULATE(
+			    [occupencyper],
+			    DimDate[Date].[Date]=TODAY()
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 21e8e873-daf7-4dec-a593-21ad0945935c
+
+	column Column
+		formatString: 0
+		lineageTag: 5a21ee2c-92d1-44a1-9fee-c092c8a898ef
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition measure = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 911f5531c6e7472db7732d6cbb5e7afb
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

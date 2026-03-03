@@ -1,0 +1,9 @@
+relationship d9ab6187-e7b5-4997-a37d-a7791ccb36a6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.Date
+	toColumn: LocalDateTable_2396e683-8b66-4aea-8f84-819f6b5d6f62.Date
+
+relationship 9b1534e5-09cd-9669-bdf1-246d3f3467d9
+	fromColumn: property_performance.BusinessDate
+	toColumn: Date.Date
+

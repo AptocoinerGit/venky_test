@@ -1,0 +1,210 @@
+table silver_properties
+	lineageTag: 018b0dee-e6b3-4941-89fd-f6648a8ed7a5
+	sourceLineageTag: [dbo].[silver_properties]
+
+	column code
+		dataType: string
+		lineageTag: d63976bf-17b1-4598-bdae-8d09e704658f
+		sourceLineageTag: code
+		summarizeBy: none
+		sourceColumn: code
+
+		annotation SummarizationSetBy = Automatic
+
+	column commercialRegisterEntry
+		dataType: string
+		lineageTag: 462b0efb-345c-40cd-8cc3-774e99a537fe
+		sourceLineageTag: commercialRegisterEntry
+		summarizeBy: none
+		sourceColumn: commercialRegisterEntry
+
+		annotation SummarizationSetBy = Automatic
+
+	column companyName
+		dataType: string
+		lineageTag: 5593eadf-fc25-453c-9309-8829f7f924d2
+		sourceLineageTag: companyName
+		summarizeBy: none
+		sourceColumn: companyName
+
+		annotation SummarizationSetBy = Automatic
+
+	column created
+		dataType: string
+		lineageTag: 9b650ae0-4761-4bae-9054-6c2afed3b82c
+		sourceLineageTag: created
+		summarizeBy: none
+		sourceColumn: created
+
+		annotation SummarizationSetBy = Automatic
+
+	column currencyCode
+		dataType: string
+		lineageTag: 11bfe3f0-dd4f-4cb3-a49d-07cb8fc718ab
+		sourceLineageTag: currencyCode
+		summarizeBy: none
+		sourceColumn: currencyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: f762646c-84c4-4f84-be7b-5d2b0157d4d4
+		sourceLineageTag: description
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: string
+		lineageTag: f87afa35-f1b1-4715-91ce-29d8216de5e4
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column isArchived
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 296aadfc-472b-48a6-b79e-2924d5e09601
+		sourceLineageTag: isArchived
+		summarizeBy: none
+		sourceColumn: isArchived
+
+		annotation SummarizationSetBy = Automatic
+
+	column isTemplate
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3468808b-09b6-440a-874c-3e738851f453
+		sourceLineageTag: isTemplate
+		summarizeBy: none
+		sourceColumn: isTemplate
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 08f1a335-e160-44e1-8581-cd7ec1842928
+		sourceLineageTag: name
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: b018dfa0-456b-4714-8945-b150fe4ce36c
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column taxId
+		dataType: string
+		lineageTag: 6aac020d-652e-4259-90f1-998fa21cb9b5
+		sourceLineageTag: taxId
+		summarizeBy: none
+		sourceColumn: taxId
+
+		annotation SummarizationSetBy = Automatic
+
+	column timeZone
+		dataType: string
+		lineageTag: fff25e41-d6f5-4363-8a59-da117d3db05b
+		sourceLineageTag: timeZone
+		summarizeBy: none
+		sourceColumn: timeZone
+
+		annotation SummarizationSetBy = Automatic
+
+	column bankAccount_bank
+		dataType: string
+		lineageTag: b45af3e9-f189-415a-93f2-58b726504925
+		sourceLineageTag: bankAccount_bank
+		summarizeBy: none
+		sourceColumn: bankAccount_bank
+
+		annotation SummarizationSetBy = Automatic
+
+	column bankAccount_bic
+		dataType: string
+		lineageTag: 5d3875d8-839d-48b4-9b7f-4ee10910f593
+		sourceLineageTag: bankAccount_bic
+		summarizeBy: none
+		sourceColumn: bankAccount_bic
+
+		annotation SummarizationSetBy = Automatic
+
+	column bankAccount_iban
+		dataType: string
+		lineageTag: 2a21c3fc-9e7e-47a7-8582-6f4362050736
+		sourceLineageTag: bankAccount_iban
+		summarizeBy: none
+		sourceColumn: bankAccount_iban
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_addressLine1
+		dataType: string
+		lineageTag: fe76c7e5-88f4-45d2-86e0-793d07277659
+		sourceLineageTag: location_addressLine1
+		summarizeBy: none
+		sourceColumn: location_addressLine1
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_city
+		dataType: string
+		lineageTag: 37dc4641-6832-4dc0-a494-cc22bc5a909a
+		sourceLineageTag: location_city
+		summarizeBy: none
+		sourceColumn: location_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_countryCode
+		dataType: string
+		lineageTag: 6713b288-0260-4757-b9df-a6ff39693d58
+		sourceLineageTag: location_countryCode
+		summarizeBy: none
+		sourceColumn: location_countryCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_postalCode
+		dataType: string
+		lineageTag: 2bebe66a-586b-4333-b6a7-5a039358069d
+		sourceLineageTag: location_postalCode
+		summarizeBy: none
+		sourceColumn: location_postalCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentTerms_de
+		dataType: string
+		lineageTag: c5e8fdec-f28a-4ffc-bafe-c2a03830d35a
+		sourceLineageTag: paymentTerms_de
+		summarizeBy: none
+		sourceColumn: paymentTerms_de
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentTerms_en
+		dataType: string
+		lineageTag: 87ee876c-fc57-4f9f-b163-fc37be4bd6f7
+		sourceLineageTag: paymentTerms_en
+		summarizeBy: none
+		sourceColumn: paymentTerms_en
+
+		annotation SummarizationSetBy = Automatic
+
+	partition silver_properties = entity
+		mode: directLake
+		source
+			entityName: silver_properties
+			expressionSource: 'DirectLake - Bronze_Layer'
+

@@ -1,0 +1,406 @@
+table property_performance
+	lineageTag: 364ec4f0-d9a2-4b8a-afc7-96ee6bac1ee3
+
+	column PropertyId
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 96a0e8cf-5e84-46c1-9a25-ee0d8e9f4287
+		summarizeBy: none
+		sourceColumn: PropertyId
+
+		annotation SummarizationSetBy = Automatic
+
+	column BusinessDate
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: 5b4b4bac-2a9f-4b9c-9eff-0e1962b87a93
+		summarizeBy: none
+		sourceColumn: BusinessDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column arrivalsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 30c4178e-77c1-4b9d-a984-ca0fdd68d3b0
+		summarizeBy: sum
+		sourceColumn: arrivalsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column cancellationsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f639a733-b93b-498d-9b3d-2ddd36916acb
+		summarizeBy: sum
+		sourceColumn: cancellationsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column departuresCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c4cf098f-cdd4-403b-90c4-6d6a07c7c408
+		summarizeBy: sum
+		sourceColumn: departuresCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column grossAccommodationRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9cd5e328-1d8d-4c89-ac76-c7a8c79510a5
+		summarizeBy: sum
+		sourceColumn: grossAccommodationRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grossAccommodationRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 44fe474f-3b92-4042-a38b-a238a9b71d1f
+		summarizeBy: none
+		sourceColumn: grossAccommodationRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column grossAdr_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f268bccd-f076-494d-b51f-f2f89f21a06f
+		summarizeBy: sum
+		sourceColumn: grossAdr_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grossAdr_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e8408fe4-348d-472c-ae4a-e2e1f10e0e29
+		summarizeBy: none
+		sourceColumn: grossAdr_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column grossFoodAndBeveragesRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b428c3a0-4626-40f3-a72b-e8a40d219573
+		summarizeBy: sum
+		sourceColumn: grossFoodAndBeveragesRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grossFoodAndBeveragesRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 51916738-d156-4690-bac6-b1891ff240e7
+		summarizeBy: none
+		sourceColumn: grossFoodAndBeveragesRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column grossOtherRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 2381d47f-871d-424e-8f70-48d2113b369b
+		summarizeBy: sum
+		sourceColumn: grossOtherRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grossOtherRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3532cf22-4670-4d45-8a27-2b0f7f970577
+		summarizeBy: none
+		sourceColumn: grossOtherRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column grossUnitRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 61789d6e-24c3-4d6c-ba43-f77fe6543ddf
+		summarizeBy: sum
+		sourceColumn: grossUnitRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grossUnitRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2c084b99-1425-4429-8cc4-4198d60b20fc
+		summarizeBy: none
+		sourceColumn: grossUnitRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column houseCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 22156417-b9e0-4f73-a6f9-599dfd4014e2
+		summarizeBy: sum
+		sourceColumn: houseCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column houseItemsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 35377b20-f1c4-4b7f-8ec2-553330dbead5
+		summarizeBy: sum
+		sourceColumn: houseItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column netAccommodationRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 44b0c71d-5281-40a8-9923-ac1ae1e66ca9
+		summarizeBy: sum
+		sourceColumn: netAccommodationRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netAccommodationRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dd828d54-1b52-4fbd-8d29-9ab2ec018b45
+		summarizeBy: none
+		sourceColumn: netAccommodationRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column netAdr_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5b2399a7-a26c-4185-9551-73112f56d557
+		summarizeBy: sum
+		sourceColumn: netAdr_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netAdr_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 35367ef8-4761-4557-86f4-5fce341ab5a2
+		summarizeBy: none
+		sourceColumn: netAdr_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column netFoodAndBeveragesRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 067d3814-b246-4888-aa93-8efda4e7af15
+		summarizeBy: sum
+		sourceColumn: netFoodAndBeveragesRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netFoodAndBeveragesRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4983c983-490d-4201-80d4-ccba500957f6
+		summarizeBy: none
+		sourceColumn: netFoodAndBeveragesRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column netOtherRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: fecd592a-2e9e-4cc5-9087-f1c8ded1a3dd
+		summarizeBy: sum
+		sourceColumn: netOtherRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netOtherRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 60c53155-5e0d-4c56-91da-5314def8ef4a
+		summarizeBy: none
+		sourceColumn: netOtherRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column netUnitRevenue_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 630265c2-632b-4855-a6ed-294c7b68d722
+		summarizeBy: sum
+		sourceColumn: netUnitRevenue_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netUnitRevenue_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1f090dcd-fc0a-4052-ab88-7dcae4a9d710
+		summarizeBy: none
+		sourceColumn: netUnitRevenue_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column noShowsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 6702f381-f35a-45ba-8ba1-9ef95e1bdd91
+		summarizeBy: sum
+		sourceColumn: noShowsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column occupancyPercentage
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f9b9af61-8649-48b2-90e2-9ce408f566bf
+		summarizeBy: sum
+		sourceColumn: occupancyPercentage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column outOfOrderCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c0ff93ee-866d-4b82-840c-3461e2cf4ed3
+		summarizeBy: sum
+		sourceColumn: outOfOrderCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column outOfOrderItemsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 01b6c632-77c5-419d-9fa6-78e785d91777
+		summarizeBy: sum
+		sourceColumn: outOfOrderItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column revPar_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 78eb8a77-3fdc-4664-8d81-6fa2c019e82d
+		summarizeBy: sum
+		sourceColumn: revPar_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column revPar_currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 00bd5000-c36f-472e-8639-48269a74219d
+		summarizeBy: none
+		sourceColumn: revPar_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column soldCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 54a658e0-fdc0-436e-92ea-fc2af76bab27
+		summarizeBy: sum
+		sourceColumn: soldCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column soldItemsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8e4df045-b544-4942-9bce-1c7fe30ff7a8
+		summarizeBy: sum
+		sourceColumn: soldItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column tentativelyBlockedCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 040cfb2b-587b-4ccd-9639-173807baec7a
+		summarizeBy: sum
+		sourceColumn: tentativelyBlockedCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column tentativelyBlockedItemsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a518f51e-549b-4609-8760-ddc3d4cde9b9
+		summarizeBy: sum
+		sourceColumn: tentativelyBlockedItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column unsoldCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2dcb8ab4-2998-4252-9f33-3e925bd7c4e4
+		summarizeBy: sum
+		sourceColumn: unsoldCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column unsoldItemsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b9ee4b9b-5a47-479d-9602-64211a065774
+		summarizeBy: sum
+		sourceColumn: unsoldItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	partition property_performance = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database("a2cuqgr5ukpeppo5hafacatsom-6wvdaepgs6mujdbsi2znglvxda.datawarehouse.fabric.microsoft.com", "Dev_Bronze_Lakehouse"),
+				    dbo_property_performance = Source{[Schema="dbo",Item="property_performance"]}[Data]
+				in
+				    dbo_property_performance
+
+	changedProperty = Name
+

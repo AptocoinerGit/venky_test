@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Load_API_Data_From_Apelao",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bed5002e-3df6-a368-4af9-dee8c8f9682b"
+  }
+}
